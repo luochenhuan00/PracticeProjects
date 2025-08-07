@@ -25,12 +25,12 @@ public class App {
         Al2.add("（深情款款）这是宇宙的产权证书，上面写着\"宇宙归你所有，但你是我的\"。（突然严肃）如果你拒绝我，我就让全宇宙的原子都重新排列，让你永远找不到自己的袜子。");
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("我：");
-            String input = sc.nextLine();
+            System.out.print("我：");
+            String input = sc.nextLine().toString();
             for (int i = 0; i < Al1.size(); i++) {
                 if (Al1.get(i).contains(input)) {
                     for (int i2 = 0; i2 < sdsnt.size(); i2++) {
-                        System.out.println(sdsnt.get(i2) + Al2.get(i));
+                        System.out.println(sdsnt.get(i2) + ":" + Al2.get(i));
                         try {
                             Thread.sleep(100);
                         } catch (InterruptedException e) {
@@ -38,8 +38,6 @@ public class App {
                             e.printStackTrace();
                         }
                     }
-                } else {
-                    break;
                 }
             }
 
