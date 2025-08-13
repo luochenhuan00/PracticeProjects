@@ -1,4 +1,4 @@
-package com;
+package com.luochenhuan.shenren;
 
 import java.util.ArrayList;
 import java.util.Scanner;
